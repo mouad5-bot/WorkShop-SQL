@@ -1,14 +1,35 @@
 à partir du schéma en utilisant les requêtes SQL, vous devez :
+
 1/ Créer la base donnée sous nom "boutique".
+    1* on va cliquer sur ajouter un nouvelle base de donnée et 
+
 2/ Création des tables (Manufacturers, Products), voir fichier build-shema
+    2* c'est fait voire la base de donner. 
+
 3/ Sélectionnez les noms de tous les produits du magasin.
+    3* SELECT name FROM `products` 
+
 4/ Sélectionner les noms et les prix de tous les produits du magasin.
+    4* SELECT name, Price FROM `products` 
+
 5/ Sélectionner le nom des produits dont le prix est inférieur ou égal à 200 $.
+    5* SELECT name FROM `products` WHERE Price < 200
+
 6/ Sélectionnez tous les produits dont le prix est compris entre 60 et 120 dollars.
+    6* SELECT * FROM `products` WHERE (Price <= 120 && Price >= 60)
+
 7/ Sélectionnez le nom et le prix en cents (c'est-à-dire que le prix doit être multiplié par 100).
+    7* SELECT Name, Price FROM `products` WHERE (Price % 100 = 0)
+
 8/ Calculer le prix moyen de tous les produits.
+    8* SELECT AVG(Price) FROM `products`
+
 9/ Calculer le prix moyen de tous les produits dont le code fabricant est égal à 2.
+    9* SELECT AVG(Price) FROM `products`  WHERE Manufacturer=2
+
 10/ Calculer le nombre de produits dont le prix est supérieur ou égal à 180 dollars.
+    10* SELECT COUNT(Code) FROM `products` WHERE (Price >= 180)
+
 11/ Sélectionner le nom et le prix de tous les produits dont le prix est supérieur ou égal à 180 dollars, et trier d'abord par prix (par ordre décroissant), puis par nom (par ordre croissant).
 12/ Sélectionnez toutes les données des produits, y compris toutes les données relatives au fabricant de chaque produit.
 13/ Sélectionnez le nom du produit, le prix et le nom du fabricant de tous les produits.
