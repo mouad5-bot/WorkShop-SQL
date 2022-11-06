@@ -31,6 +31,8 @@
     10* SELECT COUNT(Code) FROM `products` WHERE (Price >= 180)
 
 11/ Sélectionner le nom et le prix de tous les produits dont le prix est supérieur ou égal à 180 dollars, et trier d'abord par prix (par ordre décroissant), puis par nom (par ordre croissant).
+    11* SELECT Name, Price FROM `products` WHERE (Price >= 180 ) ORDER BY Name, Price
+
 12/ Sélectionnez toutes les données des produits, y compris toutes les données relatives au fabricant de chaque produit.
 13/ Sélectionnez le nom du produit, le prix et le nom du fabricant de tous les produits.
 14/ Sélectionnez le prix moyen des produits de chaque fabricant, en indiquant uniquement le code du fabricant.
