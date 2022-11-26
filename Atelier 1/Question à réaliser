@@ -44,6 +44,8 @@
     14* SELECT manufacturer, AVG(price) FROM products  GROUP BY manufacturer
 
 15/ Sélectionnez le prix moyen des produits de chaque fabricant, en indiquant le nom du fabricant.
+    15* SELECT manufacturers.Name, AVG(products.price) FROM products inner join manufacturers  GROUP BY manufacturers.Name
+
 16/ Sélectionnez les noms des fabricants dont les produits ont un prix moyen supérieur ou égal à 150 $.
 17/ Sélectionnez le nom et le prix du produit le moins cher.
 18/ Sélectionnez le nom de chaque fabricant ainsi que le nom et le prix de son produit le plus cher.
