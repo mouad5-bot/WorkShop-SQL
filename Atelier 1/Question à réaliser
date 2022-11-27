@@ -59,6 +59,8 @@
     18***OR***  SELECT m.name as ManufacturerName, p.name as ProductName, MAX(p.price) FROM products p INNER JOIN manufacturers m
 
 19/ Ajouter un nouveau produit : Loudspeakers, 70 $, manufacter 2 
+    19*  INSERT INTO `products`( `Code`, `Name`, `Price`, `Manufacturer`) VALUES ('11','Loudspeakers','70','2')
+
 20/ Mettre à jour le nom du produit 8 en "laser Print".
 21/ Appliquer une remise de 10 % à tous les produits.
 22/ Appliquer une remise de 10 % à tous les produits dont le prix est supérieur ou égal à 120 $.
