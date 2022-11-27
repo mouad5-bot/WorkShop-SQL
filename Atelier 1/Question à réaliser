@@ -55,6 +55,9 @@
     17* SELECT name, MIN(price) FROM products
 
 18/ Sélectionnez le nom de chaque fabricant ainsi que le nom et le prix de son produit le plus cher.
+    18* SELECT m.name as ManufacturerName, p.name as ProductName, MAX(p.price) FROM products p INNER JOIN manufacturers m
+    18***OR***  SELECT m.name as ManufacturerName, p.name as ProductName, MAX(p.price) FROM products p INNER JOIN manufacturers m
+
 19/ Ajouter un nouveau produit : Loudspeakers, 70 $, manufacter 2 
 20/ Mettre à jour le nom du produit 8 en "laser Print".
 21/ Appliquer une remise de 10 % à tous les produits.
